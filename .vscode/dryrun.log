@@ -1,0 +1,10 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/sergey/Desktop/tcp com'
+gcc    -c -o tcp_client/main.o tcp_client/main.c
+gcc    -c -o tcp_server/main.o tcp_server/main.c
+gcc    -c -o tcp_server/sock_serv.o tcp_server/sock_serv.c
+gcc    -c -o tcp_client/sock_cli.o tcp_client/sock_cli.c
+gcc -o tcp_server/server tcp_server/main.o tcp_server/sock_serv.o
+gcc -o tcp_client/client tcp_client/main.o tcp_client/sock_cli.o
+make: Leaving directory '/home/sergey/Desktop/tcp com'
+ 
